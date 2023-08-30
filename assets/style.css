@@ -39,7 +39,7 @@ li {
 }
 
 li a {
-    display: block;
+    display: flex; 
     color: var(--color-2);
     text-align: center;
     padding: 35px 25px;
@@ -55,18 +55,27 @@ li a:hover:not(.active) {
     background-color:var(--color-2);
 }
 
-.container {
+.Cat {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../assets/meow-meow.webp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container { 
     position: relative;
     text-align: center;
     background-color: white;
+    background-size: cover;
 }
-.bottom-right {
+
+#bottom-right {
     position: absolute;
-    bottom: 8px;
+    bottom: 35px;
     right: 16px;
     background-color: var(--color-2); 
     color: var(--text-color);
-    border: 2px solid var(--color-2);
     padding: 7px;
     font-size: 25px;
     font-weight: bold;
@@ -79,10 +88,27 @@ main {
     flex-direction: column;
 }
 
-section {
-    height: 200px;
+.section-main {
+    flex: 0 0 70%;
+    /* height: 250px; */
+}
+
+.section-heading {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 2px solid black;
+}
+
+section { 
+    min-height: 250px;
     border:solid purple 2px;
     margin:10px;
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.About-me {
 }
 
 
