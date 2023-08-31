@@ -7,6 +7,7 @@
     --text-color: rgb(46, 45, 45);
     --color-1: rgb(65, 65, 65);
     --color-2: lightblue;
+    --color-3: rgb(40, 108, 131);
 }
 
 body {
@@ -29,11 +30,12 @@ li {
 }
 
 #name {
-    font-size: larger; 
+    font-size: 32px; 
     display: flex;
     color: var(--text-color);
     text-align: center;
-    padding: 25px 10px 25px 100px;
+    padding: 20px 10px 20px 100px;
+    margin-top: 6px;
     flex-wrap: wrap;
     background-color: var(--color-2);
 }
@@ -96,19 +98,82 @@ main {
 .section-heading {
     flex: 0 0 20%;
     text-align: right;
-    border-right: 2px solid black;
+    border-right: 5px solid var(--color-3);
+    color: var(--color-3);
+    font-size: 35px;
 }
 
 section { 
-    min-height: 250px;
+    /* min-height: 250px; */
     border:solid purple 2px;
     margin:10px;
-    font-size: larger;
     display: flex;
     justify-content: space-evenly;
 }
+#Work {
+    margin-bottom: 25px;
+    min-height: 1250px;
+}
+#Contact-me {
+}
+#section-1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-3);
+    text-indent: 50px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+.small-project {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-.About-me {
+}
+.project-work{
+    max-width: 45%;
+
+}
+.project-work img {
+    width: 100%;
+    max-height: 200px;
+    border: solid var(--color-2) 3px;
+    -webkit-filter: brightness(50%);
+}
+.project-work p {
+    position: relative;
+    bottom: 125px;
+    background-color: var(--color-2);
+    color: var(--text-color);
+    width: 50%;
+    border: 25px solid var(--color-2);
+    font-size: 20px;
+}
+.project-work img:hover, .project-work img:active{
+    -webkit-filter: brightness(100%);
+}
+
+
+#project-work-2{
+    height: 800px;
+    border: solid var(--color-2) 3px;
+}
+
+
+
+.section-main ol {
+display: flex; 
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.section-main ol li a {
+    text-decoration: underline 3px var(--color-3);
+    color: var(--color-3);
+}
+
+
+.section-main ol li a:hover:not(.active) {
+    background-color: var(--color-1);
 }
 
 
